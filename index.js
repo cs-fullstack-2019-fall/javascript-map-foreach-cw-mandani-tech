@@ -18,9 +18,12 @@ while (askWord !=='q')
 let StringArray =["Hello"," HI"," HOW" ,"ARE", " YOU"];
 let NewLowerCaseString=[];
 
-   NewLowerCaseString =StringArray.map(function(eachElement){
+   NewLowerCaseString =StringArray.map(function(eachElement)
 
-     StringArray.toLowerCase(); // toLowercase is an existing JavaScript Function
+       {
+
+     console.log(NewLowerCaseString.toLowerCase()); // toLowercase is an existing JavaScript Function
      return (eachElement);
-}
+
+      }
  );

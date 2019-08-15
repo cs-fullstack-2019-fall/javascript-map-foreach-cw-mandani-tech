@@ -16,14 +16,12 @@ while (askWord !=='q')
 // Make any string array all lower case strings. If you don't remember how to use that Google it.
 
 let StringArray =["Hello"," HI"," HOW" ,"ARE", " YOU"];
-let NewLowerCaseString=[];
+// let NewLowerCaseString=[]; //you don't have to define an empty array
 
-   NewLowerCaseString =StringArray.map(function(eachElement)
-
-       {
-
-     console.log(NewLowerCaseString.toLowerCase()); // toLowercase is an existing JavaScript Function
-     return (eachElement);
-
-      }
+let NewLowerCaseString = StringArray.map(function(eachElement){
+     // console.log(NewLowerCaseString.toLowerCase); // toLowercase is an existing JavaScript Function NO but toLowerCase() is though 
+     return (eachElement.toLowerCase()); // you have to call toLowerCase on each element NOT on the function as a whole
+ 	}
  );
+console.log(StringArray)
+console.log(NewLowerCaseString)
